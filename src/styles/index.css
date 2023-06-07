@@ -196,8 +196,9 @@ body {
 }
 
 .counter {
-  position: relative;
+  position: absolute;
   right: 50%;
+  top: 530px;
   color: white;
   font-weight: 500;
 }
@@ -267,6 +268,7 @@ body {
   margin: 0;
   padding: 2px!important;
 }
+
 .stars {
   display: flex;
   color: #FF6060;
