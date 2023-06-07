@@ -10,7 +10,9 @@ class Collapse extends React.Component {
     }
 
     toggleContent = () => {
-        this.setState(prevState => ({isParagrapheVisible: !prevState.isParagrapheVisible, isIconeRotated: !prevState.isParagrapheVisible               
+        this.setState(prevState => ({
+            isParagrapheVisible: !prevState.isParagrapheVisible, 
+            isIconeRotated: !prevState.isParagrapheVisible               
         }));
     }
 
@@ -22,7 +24,7 @@ class Collapse extends React.Component {
             <div className='collapse'>
                 <h2 onClick={this.toggleContent}>{collapseTitle}<i className={`fa-solid fa-chevron-up ${this.state.isIconeRotated ? 'rotate-icon' : ''}`} />
                 </h2>
-                {isParagrapheVisible && <p>{content}</p>}
+                {isParagrapheVisible && <div>{content}</div>}
             </div>
         );
     }

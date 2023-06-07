@@ -32,7 +32,7 @@ body {
 .navigation nav a {
   text-decoration: none;
   margin-left: 57px;
-  color: #f94a4a;
+  color: #FF6060;
   font-weight: 500;
   font-size: 24px;
 }
@@ -66,7 +66,7 @@ body {
 
 .banner h1 {
   position: relative;
-  bottom: 165px;
+  bottom: 140px;
   text-align: center;
   color: white;
   font-weight: 500;
@@ -140,7 +140,7 @@ body {
   align-items: center;
 }
 
-.collapse p {
+.collapse div {
   font-size: 24px;
   padding: 30px 20px 20px 20px;
   background-color: #F7F7F7;
