@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import data from '../data.json';
 import { useParams } from "react-router-dom";
 import Slider from "../components/Slider";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
+import Notfound from "./Notfound";
 
 
 function Logement () {
@@ -12,6 +13,9 @@ function Logement () {
      const {id} = useParams();
      const logement = data.find(logement => logement.id === id);
 
+    if (!logement) {
+        return <Notfound />;
+    }
 
     return (
         <div className="wrapper">
