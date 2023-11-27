@@ -11,7 +11,7 @@ function Slider ({pictures}) {
     }; 
 
     const goRight = () => {
-        setActiveIndex(previous => previous === pictures.length - 1 ? 0 : previous + 1);
+        setActiveIndex(next => next === pictures.length - 1 ? 0 : activeIndex + 1);
     };
 
     const imageCounter = `${activeIndex + 1}/${pictures.length}`;
